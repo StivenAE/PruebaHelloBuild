@@ -1,0 +1,30 @@
+{
+  "name": "projecthellob",
+  "version": "1.0.0",
+  "description": "Prueba para helloB",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open --browser chrome --e2e"
+  },
+  "keywords": [
+    "prueba",
+    "cypress",
+    "js",
+    "cucumber"
+  ],
+  "author": "StivenAE",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.7.0",
+    "cypress-mochawesome-reporter": "^3.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/step_definitions/*.js"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^12.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "multiple-cucumber-html-reporter": "^2.0.0"
+  }
+}
